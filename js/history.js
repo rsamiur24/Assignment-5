@@ -4,17 +4,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const donationSections = document.getElementById("donation-sections");
     const historySection = document.getElementById("history-section");
 
-    // Initial state
-    historySection.style.display = "none"; // Hide history page initially
+    
+    historySection.style.display = "none"; 
 
-    // Come back to History 
+    
 
     historyTab.addEventListener("click", function() {
-        // Hide donation sections and show history
+
+        // Hide donation and  show history
+
         donationSections.style.display = "none";
         historySection.style.display = "block";
 
-        // Transfer button classes
+        // button classes
+
         historyTab.classList.remove("bg-gray-200", "text-gray-600");
         historyTab.classList.add("bg-gradient-to-r", "from-blue-500", "to-purple-600", "text-white");
 
@@ -22,13 +25,19 @@ document.addEventListener("DOMContentLoaded", function() {
         donationTab.classList.add("bg-gray-200", "text-gray-600");
     });
 
-    // Switching back to Donation Tab
+    //  back to Donation Tab
+
     donationTab.addEventListener("click", function() {
-        // Hide history and show donation sections
+
+        // Hide history and show donation 
+
+
         historySection.style.display = "none";
         donationSections.style.display = "block";
 
         // Transfer button classes
+
+
         donationTab.classList.remove("bg-gray-200", "text-gray-600");
         donationTab.classList.add("bg-gradient-to-r", "from-blue-500", "to-purple-600", "text-white");
 
@@ -36,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
         historyTab.classList.add("bg-gray-200", "text-gray-600");
     });
 
-    // Donation button functionality
+    // Donation button functions
 
     const donateBtn = document.querySelectorAll(".donate-btn");
     donateBtn.forEach((btn) => {
@@ -49,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const formattedDate = donationDate.toLocaleDateString();
                 const formattedTime = donationDate.toLocaleTimeString();
 
-                // Update the history content safely
+                // Update history 
                 const historyEntry = `
                     <p>Last Donation:</p>
                     <ul>
