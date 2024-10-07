@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate For Unity</title>
+    <style>
+        .input-btn:hover {
+    border: 2px solid #4F46E5; 
+    transition: border 0.3s;
+}
+
+.donate-btn:hover {
+    background-color: #38A169; 
+    transition: background-color 0.3s;
+}
+    </style>
    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
 <body>
     <nav class="bg-yellow-200 navbar p-1 h-28 ml-24 mr-24 lg:p-7 lg:mt-3 rounded-lg">
@@ -191,9 +202,27 @@
     </section>
 </div>
 
-    </main>
-    <script src="js/donate.js"></script>
+
+  </main>
+
+  <!-- History Section -->
+<main id="history-section" style="display:none;">
+    <div class="bg-slate-100 ml-36 mt-14 w-4/5 h-1/2 flex items-center justify-center py-10 rounded-lg">
+        <div class="bg-yellow-50 p-2 w-4/5 rounded-lg">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold mb-5">Donation History</h2>
+                <p id="history-content" class="text-black">
+                    <!-- Donation details will be updated here -->
+                   
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+   
     <script src="js/index.js"></script>
+    <script src="js/donate.js"></script> 
+    <script src="js/history.js"></script>
     
 </body>
 </html>
