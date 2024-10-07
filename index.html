@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate For Unity</title>
+   
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <nav class="bg-yellow-200  p-1 h-28 ml-24 mr-24 lg:p-7 lg:mt-3 rounded-lg">
+    <nav class="bg-yellow-200 navbar p-1 h-28 ml-24 mr-24 lg:p-7 lg:mt-3 rounded-lg">
         <div class="mx-auto max-w-7xl  px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 lg:items-center justify-between lg:w-4/5">
             
@@ -69,27 +70,29 @@
       
       
       </nav>
-    <main>
+
+      <div class="  flex justify-center items-center">
+        <div class="flex space-x-1 mt-14">
+            <!-- Left button: Assistant -->
+            <button
+                id="donation-tab"
+                class="w-32 py-2 rounded-full focus:outline-none transition-colors duration-200 text-white font-semibold bg-gradient-to-r from-blue-500 to-purple-600"
+            >
+                Donation
+            </button>
+            <!-- Right button: History -->
+            <button
+                id="history-tab"
+                class="w-32 py-2 rounded-full focus:outline-none transition-colors duration-200 text-gray-600 font-semibold bg-gray-200"
+            >
+                History
+            </button>
+        </div>
+    </div>
+    <main id="donation-sections">
       
 
-<div class="flex justify-center items-center">
-    <div class="flex space-x-1 mt-14">
-        <!-- Left button: Assistant -->
-        <button
-            id="donation-tab"
-            class="w-32 py-2 rounded-full focus:outline-none transition-colors duration-200 text-white font-semibold bg-gradient-to-r from-blue-500 to-purple-600"
-        >
-            Donation
-        </button>
-        <!-- Right button: History -->
-        <button
-            id="history-tab"
-            class="w-32 py-2 rounded-full focus:outline-none transition-colors duration-200 text-gray-600 font-semibold bg-gray-200"
-        >
-            History
-        </button>
-    </div>
-</div>
+
 
 <div>
     <section class="bg-slate-100 donation-section ml-36 mt-14 w-4/5 h-1/2 flex items-center justify-center py-10 rounded-lg">
@@ -189,6 +192,8 @@
 </div>
 
     </main>
+    <script src="js/donate.js"></script>
     <script src="js/index.js"></script>
+    
 </body>
 </html>

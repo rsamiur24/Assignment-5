@@ -2,6 +2,7 @@ const donationSections = document.querySelectorAll('.donation-section');
 const finalTotalButton = document.getElementById('final-total-btn');
 const calculateFinalTotalButton = document.getElementById('donation-tab');
 
+
 donationSections.forEach(section => {
     const inputField = section.querySelector('.input-btn');
     const totalButton = section.querySelector('.total-btn');
@@ -15,6 +16,7 @@ donationSections.forEach(section => {
             const newTotal = inputValue + currentTotal;
             totalButton.innerHTML = `<i class="fa-solid fa-circle-dollar-to-slot bg-yellow-500 rounded-full"></i> ${newTotal} BDT`; 
             inputField.value = ''; 
+           
         } 
         else {
             alert('Sorry, not a valid number');
